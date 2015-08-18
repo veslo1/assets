@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Tecnoservicio</title>
+
+	<!-- CSS -->
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<!-- Font Awesome CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+
+	<!-- Animate css -->
+	<link href="assets/css/animate.css" rel="stylesheet">
+
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+</head>
+
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Intro section start -->
+
+	<section class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="i_header">
+						<div class="logo">
+							<img src="assets/images/logo.png" alt="">
+						</div>
+						<h1>SistemaTecno</h1>
+						<p>Proximamente</p>
+					</div>
+
+					<div class="i_footer">
+						<a href="" class="btn btn-default btn-lg btn-theme">acceso empleados</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="particles-js"></div>
+	</section>
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Background slider -->
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+	<!-- Count Down - Time Circles  -->
+	<script src="assets/js/TimeCircles.js"></script>
+	<!-- WOW - Reveal Animations When You Scroll -->
+	<script src="assets/js/wow.min.js"></script>
+	<!-- Smooth scroll -->
+	<script src="assets/js/smoothscroll.js"></script>
+	<!-- Particles animation -->
+	<script src="assets/js/particles.min.js"></script>
+	
+
+	<script type="text/javascript">
+		(function($){
+
+			/* ---------------------------------------------- /*
+			 * Preloader
+			/* ---------------------------------------------- */
+
+			$(window).load(function() {
+				$('#status').fadeOut();
+				$('#preloader').delay(350).fadeOut('slow');
+				$('body').delay(350).css({'overflow':'visible'});
+			});
+
+			h = $( window ).height()
+			$( '.intro' ).css( "height", h );
+
+			$(document).ready(function() {
+
+				/* ---------------------------------------------- /*
+				 * Background image
+				/* ---------------------------------------------- */
+
+				$.backstretch(['assets/images/index_bg.jpg']);
+
+			});
+
+		})(jQuery);
+
+	</script>
+</body>
+</html>
